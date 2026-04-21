@@ -3,8 +3,8 @@ import { Check, Zap } from "lucide-react";
 
 const STAGES = [
   { label: "idle", email: "", name: "", pct: 0 },
-  { label: "fetching disposable inbox", email: "", name: "", pct: 35 },
-  { label: "detecting fields (MutationObserver)", email: "k7p2x@tempmail.io", name: "", pct: 65 },
+  { label: "generating email", email: "", name: "", pct: 35 },
+  { label: "detecting fields", email: "k7p2x@tempmail.io", name: "", pct: 65 },
   { label: "filling form", email: "k7p2x@tempmail.io", name: "Alex Rivera", pct: 90 },
   { label: "done · 2.4s", email: "k7p2x@tempmail.io", name: "Alex Rivera", pct: 100 },
 ];
