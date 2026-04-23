@@ -4,7 +4,7 @@ const STEPS = [
   {
     n: "01",
     icon: LogIn,
-    title: " ",
+    title: "Sign in with Google. You're set.",
     body: "Sign in with Google into the FlashFill popup. One-time setup. Never do it again.",
   },
   {

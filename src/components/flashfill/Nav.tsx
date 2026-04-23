@@ -1,4 +1,4 @@
-import { Zap } from "lucide-react";
+import { Zap, Chrome } from "lucide-react";
 
 export const Nav = () => {
   return (
@@ -16,6 +16,14 @@ export const Nav = () => {
         <div className="flex items-center gap-1 sm:gap-6">
           <a href="#how" className="hidden font-mono text-sm hover:text-bolt sm:inline">how it works</a>
           <a href="#privacy" className="hidden font-mono text-sm hover:text-bolt sm:inline">privacy</a>
+          <a
+            href="#"
+            className="inline-flex items-center gap-2 border-2 border-ink bg-bolt px-3 py-1.5 font-mono text-sm font-bold uppercase tracking-wider shadow-brutal transition-snap hover:-translate-y-0.5"
+          >
+            <Chrome className="h-4 w-4" />
+            <span className="hidden sm:inline">Get Extension</span>
+            <span className="sm:hidden">Get</span>
+          </a>
         </div>
       </nav>
     </header>

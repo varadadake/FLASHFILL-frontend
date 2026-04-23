@@ -28,7 +28,9 @@ export const Compatibility = () => {
                     <Zap className="h-3.5 w-3.5 fill-bolt text-bolt" strokeWidth={2} />
                     {label}
                   </span>
-                  <span className="font-mono text-sm font-bold text-bolt">{count}</span>
+                  <span className="bg-ink px-2.5 py-0.5 font-mono text-sm font-bold text-bolt">
+                    {count}
+                  </span>
                 </div>
               ))}
             </div>

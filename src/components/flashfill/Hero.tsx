@@ -1,4 +1,4 @@
-import { ArrowRight, Zap } from "lucide-react";
+import { ArrowRight, Zap, Chrome } from "lucide-react";
 import { FillDemo } from "./FillDemo";
 
 export const Hero = () => {
@@ -26,7 +26,7 @@ export const Hero = () => {
           </h1>
 
           <p className="mt-6 max-w-xl text-lg text-muted-foreground sm:text-xl">
-            FlashFill is a browser extension that fills signup forms with a fresh disposable email — instantly. On 5000+ sites. Without ever touching your real inbox.
+            FlashFill is a browser extension that fills signup forms with a fresh disposable email — instantly. On 50,000+ sites. Without ever touching your real inbox.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
@@ -37,12 +37,19 @@ export const Hero = () => {
               See how it works
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </a>
+            <a
+              href="#"
+              className="inline-flex items-center gap-2 border-2 border-ink bg-bolt px-6 py-3 font-mono text-sm font-bold uppercase tracking-wider shadow-brutal transition-snap hover:-translate-y-0.5"
+            >
+              <Chrome className="h-4 w-4" />
+              Get Extension
+            </a>
           </div>
 
           <dl className="mt-10 grid grid-cols-3 gap-4 border-t-2 border-ink pt-6 max-w-md">
             <div>
               <dt className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">Sites</dt>
-              <dd className="font-display text-2xl font-bold">5000+</dd>
+              <dd className="font-display text-2xl font-bold">50,000+</dd>
             </div>
             <div>
               <dt className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">Fill time</dt>
