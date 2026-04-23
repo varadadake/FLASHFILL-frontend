@@ -31,10 +31,10 @@ export const Hero = () => {
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <a
-              href="#install"
+              href="#how"
               className="group inline-flex items-center gap-2 border-2 border-ink bg-ink px-6 py-3 font-mono text-sm font-bold uppercase tracking-wider text-bolt shadow-brutal-bolt transition-snap hover:-translate-y-0.5 hover:translate-x-0 hover:shadow-[10px_10px_0_0_hsl(var(--bolt))]"
             >
-              Install extension
+              See how it works
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </a>
           </div>

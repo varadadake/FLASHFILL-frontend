@@ -16,7 +16,6 @@ export const Nav = () => {
         <div className="flex items-center gap-1 sm:gap-6">
           <a href="#how" className="hidden font-mono text-sm hover:text-bolt sm:inline">how it works</a>
           <a href="#privacy" className="hidden font-mono text-sm hover:text-bolt sm:inline">privacy</a>
-          <a href="#install" className="hidden font-mono text-sm hover:text-bolt sm:inline">install</a>
         </div>
       </nav>
     </header>

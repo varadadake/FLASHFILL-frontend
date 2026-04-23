@@ -1,17 +1,17 @@
-import { Key, MousePointerClick, Mailbox } from "lucide-react";
+import { LogIn, MousePointerClick, Mailbox } from "lucide-react";
 
 const STEPS = [
   {
     n: "01",
-    icon: Key,
-    title: "One key. You're set.",
-    body: "Grab a free Tempmail key from RapidAPI and paste it into the FlashFill popup. One-time setup, under 60 seconds. Never do it again.",
+    icon: LogIn,
+    title: " ",
+    body: "Sign in with Google into the FlashFill popup. One-time setup. Never do it again.",
   },
   {
     n: "02",
     icon: MousePointerClick,
     title: "Click the bolt. Watch it fill.",
-    body: "Hit the FlashFill icon on any signup page. It instantly detects every field — name, email, password — and fills them all. Works on React, Next.js, Vue, and every dynamic SPA.",
+    body: "Hit the FlashFill icon on any signup page. It instantly detects every field — name, email, password — and fills them all.",
   },
   {
     n: "03",
