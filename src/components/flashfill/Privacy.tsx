@@ -3,8 +3,8 @@ import { ShieldCheck, EyeOff, Code2, Lock } from "lucide-react";
 const POINTS = [
   { icon: EyeOff, title: "Your real email never leaves the building", body: "Forms get a disposable address. Always. Your inbox stays out of every leaked database." },
   { icon: ShieldCheck, title: "Zero telemetry. Zero tracking.", body: "No analytics. No phone-home. No mystery network calls. Inspect the bundle yourself." },
-  { icon: Code2, title: "Open source, MIT licensed", body: "Every line is on GitHub. Audit it, fork it, ship your own. We have nothing to hide." },
-  { icon: Lock, title: "Keys live in your browser only", body: "Your RapidAPI key is stored locally with the browser's storage API — never synced to a server." },
+  { icon: Code2, title: "Open source, MIT licensed", body: "Every line is public. Audit it, fork it, ship your own. We have nothing to hide." },
+  { icon: Lock, title: "Keys live in your browser only", body: "Your credentials are stored locally with the browser's storage API — never synced to a server." },
 ];
 
 export const Privacy = () => {
@@ -24,7 +24,7 @@ export const Privacy = () => {
               for yourself.
             </h2>
             <p className="mt-6 max-w-md text-lg text-paper/70">
-              Because that's exactly what happened. Rushil got tired of his inbox filling up with newsletters from "free trial" tools — so he wrote FlashFill.
+              Because everyone knows the pain — your inbox buried under trial emails, newsletters, and spam from tools you tested once and forgot. FlashFill was built to end that.
             </p>
           </div>
 

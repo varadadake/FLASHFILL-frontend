@@ -4,7 +4,6 @@ import { Marquee } from "@/components/flashfill/Marquee";
 import { HowItWorks } from "@/components/flashfill/HowItWorks";
 import { Privacy } from "@/components/flashfill/Privacy";
 import { Compatibility } from "@/components/flashfill/Compatibility";
-import { Install } from "@/components/flashfill/Install";
 import { Footer } from "@/components/flashfill/Footer";
 
 const Index = () => {
@@ -17,7 +16,6 @@ const Index = () => {
       <HowItWorks />
       <Compatibility />
       <Privacy />
-      <Install />
       <Footer />
     </main>
   );
