@@ -1,4 +1,4 @@
-import { Github, Zap } from "lucide-react";
+import { Zap } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -13,28 +13,13 @@ export const Footer = () => {
               <span className="font-display text-xl font-bold tracking-tight">FlashFill</span>
             </div>
             <p className="mt-3 max-w-sm font-mono text-xs text-paper/50">
-              Built by{" "}
-              <a href="https://github.com/rushilbh27" target="_blank" rel="noreferrer" className="text-bolt hover:underline">
-                @rushilbh27
-              </a>
-              {" & "}
-              <a href="https://github.com/varadadake" target="_blank" rel="noreferrer" className="text-bolt hover:underline">
-                @varadadake
-              </a>
-              . MIT licensed. Fork it, ship it, make it yours.
+              Fill fast. Stay private. Sign up for anything.
             </p>
           </div>
 
           <div className="flex items-center gap-6 font-mono text-xs uppercase tracking-widest">
-            <a href="https://github.com/rushilbh27/flashfill" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-paper/70 hover:text-bolt">
-              <Github className="h-4 w-4" />
-              Source
-            </a>
             <a href="https://github.com/rushilbh27/flashfill/blob/main/LICENSE" target="_blank" rel="noreferrer" className="text-paper/70 hover:text-bolt">
-              MIT
-            </a>
-            <a href="https://github.com/rushilbh27/flashfill/issues" target="_blank" rel="noreferrer" className="text-paper/70 hover:text-bolt">
-              Issues
+              MIT License
             </a>
           </div>
         </div>

@@ -2,25 +2,48 @@ import { useEffect, useState } from "react";
 import { Check, Zap } from "lucide-react";
 
 const STAGES = [
-  { label: "idle", email: "", name: "", pct: 0 },
-  { label: "generating email", email: "", name: "", pct: 35 },
-  { label: "detecting fields", email: "k7p2x@tempmail.io", name: "", pct: 65 },
-  { label: "filling form", email: "k7p2x@tempmail.io", name: "Alex Rivera", pct: 90 },
-  { label: "done · 2.4s", email: "k7p2x@tempmail.io", name: "Alex Rivera", pct: 100 },
+  { label: "idle",               email: "",                   name: "",            password: false, pct: 0   },
+  { label: "generating email",   email: "",                   name: "",            password: false, pct: 35  },
+  { label: "detecting fields",   email: "k7p2x@tempmail.io", name: "",            password: false, pct: 65  },
+  { label: "filling form",       email: "k7p2x@tempmail.io", name: "Alex Rivera", password: true,  pct: 90  },
+  { label: "done · 2.4s",        email: "k7p2x@tempmail.io", name: "Alex Rivera", password: true,  pct: 100 },
 ];
+
+const TYPING_SPEED = 52;
+const PASSWORD_STR  = "••••••••••••";
+
+function useTypedValue(target: string, speed: number) {
+  const [typed, setTyped] = useState("");
+
+  useEffect(() => {
+    if (!target) { setTyped(""); return; }
+    setTyped("");
+    let i = 0;
+    const id = setInterval(() => {
+      i++;
+      setTyped(target.slice(0, i));
+      if (i >= target.length) clearInterval(id);
+    }, speed);
+    return () => clearInterval(id);
+  }, [target, speed]);
+
+  return typed;
+}
 
 export const FillDemo = () => {
   const [stage, setStage] = useState(0);
 
   useEffect(() => {
-    const t = setInterval(() => {
-      setStage((s) => (s + 1) % STAGES.length);
-    }, 1400);
+    const t = setInterval(() => setStage((s) => (s + 1) % STAGES.length), 1900);
     return () => clearInterval(t);
   }, []);
 
-  const s = STAGES[stage];
-  const done = stage === STAGES.length - 1;
+  const s        = STAGES[stage];
+  const done     = stage === STAGES.length - 1;
+
+  const typedEmail    = useTypedValue(s.email,                       TYPING_SPEED);
+  const typedName     = useTypedValue(s.name,                        TYPING_SPEED);
+  const typedPassword = useTypedValue(s.password ? PASSWORD_STR : "", TYPING_SPEED - 12);
 
   return (
     <div className="relative">
@@ -48,8 +71,11 @@ export const FillDemo = () => {
               Full name
             </label>
             <div className="flex h-11 items-center border-2 border-ink bg-input/40 px-3 font-mono text-sm">
-              {s.name}
+              {typedName}
               {!s.name && <span className="h-4 w-px animate-blink bg-foreground" />}
+              {s.name && typedName.length < s.name.length && (
+                <span className="h-4 w-px animate-blink bg-foreground" />
+              )}
             </div>
           </div>
           <div>
@@ -57,8 +83,11 @@ export const FillDemo = () => {
               Email address
             </label>
             <div className="flex h-11 items-center border-2 border-ink bg-input/40 px-3 font-mono text-sm">
-              {s.email}
+              {typedEmail}
               {!s.email && <span className="h-4 w-px animate-blink bg-foreground" />}
+              {s.email && typedEmail.length < s.email.length && (
+                <span className="h-4 w-px animate-blink bg-foreground" />
+              )}
             </div>
           </div>
           <div>
@@ -66,7 +95,11 @@ export const FillDemo = () => {
               Password
             </label>
             <div className="flex h-11 items-center border-2 border-ink bg-input/40 px-3 font-mono text-sm tracking-widest">
-              {stage >= 3 ? "••••••••••••" : <span className="h-4 w-px animate-blink bg-foreground" />}
+              {typedPassword}
+              {!s.password && <span className="h-4 w-px animate-blink bg-foreground" />}
+              {s.password && typedPassword.length < PASSWORD_STR.length && (
+                <span className="h-4 w-px animate-blink bg-foreground" />
+              )}
             </div>
           </div>
 
