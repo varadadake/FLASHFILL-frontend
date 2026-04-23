@@ -4,20 +4,20 @@ const STEPS = [
   {
     n: "01",
     icon: Key,
-    title: "Drop in your free RapidAPI key",
-    body: "One-time setup. Grab a free Tempmail key from RapidAPI and paste it into the FlashFill popup. That's it.",
+    title: "One key. You're set.",
+    body: "Grab a free Tempmail key from RapidAPI and paste it into the FlashFill popup. One-time setup, under 60 seconds. Never do it again.",
   },
   {
     n: "02",
     icon: MousePointerClick,
-    title: "Click the bolt on any signup page",
-    body: "FlashFill detects fields with MutationObserver — works on React, Next.js, Vue, and every dynamic SPA in the wild.",
+    title: "Click the bolt. Watch it fill.",
+    body: "Hit the FlashFill icon on any signup page. It instantly detects every field — name, email, password — and fills them all. Works on React, Next.js, Vue, and every dynamic SPA.",
   },
   {
     n: "03",
     icon: Mailbox,
-    title: "Read the verification in the popup",
-    body: "Confirmation emails land in your disposable inbox right inside the extension. Click the link, you're in.",
+    title: "Verify inside. Account unlocked.",
+    body: "Your confirmation email lands right inside the popup — no tab switching. Click the link and you're in. Real inbox untouched. Zero spam, forever.",
   },
 ];
 
@@ -27,7 +27,6 @@ export const HowItWorks = () => {
       <div className="container">
         <div className="flex items-end justify-between gap-8 mb-12">
           <div>
-            <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">// how it works</p>
             <h2 className="mt-3 font-display text-4xl font-bold tracking-tight sm:text-5xl">
               Three steps. Then never type<br />a fake email again.
             </h2>

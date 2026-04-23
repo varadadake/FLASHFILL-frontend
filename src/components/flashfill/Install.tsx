@@ -1,4 +1,4 @@
-import { Github, Download, Terminal } from "lucide-react";
+import { Download, Terminal } from "lucide-react";
 
 export const Install = () => {
   return (
@@ -6,7 +6,6 @@ export const Install = () => {
       <div className="absolute inset-0 bg-grid opacity-60" />
       <div className="container relative">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">// install</p>
           <h2 className="mt-3 font-display text-5xl font-bold tracking-tight sm:text-6xl">
             Get the bolt.<br />
             <span className="bg-bolt px-3">In 60 seconds.</span>
@@ -30,15 +29,6 @@ export const Install = () => {
           </div>
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-            <a
-              href="https://github.com/rushilbh27/flashfill"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-2 border-2 border-ink bg-ink px-6 py-3 font-mono text-sm font-bold uppercase tracking-wider text-bolt shadow-brutal-bolt transition-snap hover:-translate-y-0.5"
-            >
-              <Github className="h-4 w-4" />
-              View on GitHub
-            </a>
             <a
               href="https://github.com/rushilbh27/flashfill/archive/refs/heads/main.zip"
               className="inline-flex items-center gap-2 border-2 border-ink bg-bolt px-6 py-3 font-mono text-sm font-bold uppercase tracking-wider transition-snap hover:-translate-y-0.5 hover:shadow-brutal"

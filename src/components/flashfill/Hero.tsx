@@ -1,4 +1,4 @@
-import { ArrowRight, Github, Zap } from "lucide-react";
+import { ArrowRight, Zap } from "lucide-react";
 import { FillDemo } from "./FillDemo";
 
 export const Hero = () => {
@@ -36,15 +36,6 @@ export const Hero = () => {
             >
               Install extension
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-            </a>
-            <a
-              href="https://github.com/rushilbh27/flashfill"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-2 border-2 border-ink bg-background px-6 py-3 font-mono text-sm font-bold uppercase tracking-wider transition-snap hover:-translate-y-0.5 hover:bg-bolt hover:shadow-brutal"
-            >
-              <Github className="h-4 w-4" />
-              Star on GitHub
             </a>
           </div>
 

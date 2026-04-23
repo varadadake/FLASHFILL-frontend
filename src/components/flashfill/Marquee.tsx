@@ -1,15 +1,15 @@
 const ITEMS = [
+  "INSTANT SIGNUP",
+  "ZERO SPAM",
+  "NO TRACKING",
+  "FREE FOREVER",
   "5000+ SITES",
-  "REACT",
-  "NEXT.JS",
-  "VUE",
-  "SVELTE",
-  "SPAs",
-  "MUTATIONOBSERVER",
-  "ZERO TELEMETRY",
-  "MIT LICENSED",
+  "ONE CLICK",
+  "STAY PRIVATE",
+  "WORKS EVERYWHERE",
+  "<3 SECONDS",
   "OPEN SOURCE",
-  "<3 SECOND FILL",
+  "INBOX SAFE",
 ];
 
 export const Marquee = () => {

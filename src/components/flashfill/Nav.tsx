@@ -1,4 +1,4 @@
-import { Github, Zap } from "lucide-react";
+import { Zap } from "lucide-react";
 
 export const Nav = () => {
   return (
@@ -17,15 +17,6 @@ export const Nav = () => {
           <a href="#how" className="hidden font-mono text-sm hover:text-bolt sm:inline">how it works</a>
           <a href="#privacy" className="hidden font-mono text-sm hover:text-bolt sm:inline">privacy</a>
           <a href="#install" className="hidden font-mono text-sm hover:text-bolt sm:inline">install</a>
-          <a
-            href="https://github.com/rushilbh27/flashfill"
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-2 border-2 border-ink bg-background px-3 py-1.5 font-mono text-sm font-medium transition-snap hover:-translate-y-0.5 hover:bg-bolt hover:shadow-brutal"
-          >
-            <Github className="h-4 w-4" />
-            <span>GitHub</span>
-          </a>
         </div>
       </nav>
     </header>
