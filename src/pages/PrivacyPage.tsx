@@ -153,7 +153,7 @@ export default function PrivacyPage() {
             {[
               ["Identity history", "Stored locally until you manually clear it or uninstall the extension."],
               ["Temporary email inboxes", "Expire automatically according to the third-party email service's retention policy (typically 10–60 minutes)."],
-              ["Session data", "Cleared when you click "Clear Session" in the popup."],
+              ["Session data", "Cleared when you click 'Clear Session' in the popup."],
             ].map(([term, def]) => (
               <li key={term} className="flex gap-2">
                 <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-bolt" />
