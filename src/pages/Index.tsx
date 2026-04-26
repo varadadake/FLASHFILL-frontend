@@ -2,7 +2,6 @@ import { Nav } from "@/components/flashfill/Nav";
 import { Hero } from "@/components/flashfill/Hero";
 import { Marquee } from "@/components/flashfill/Marquee";
 import { HowItWorks } from "@/components/flashfill/HowItWorks";
-import { Privacy } from "@/components/flashfill/Privacy";
 import { Compatibility } from "@/components/flashfill/Compatibility";
 import { OpenSource } from "@/components/flashfill/OpenSource";
 import { Footer } from "@/components/flashfill/Footer";
@@ -16,7 +15,6 @@ const Index = () => {
       <Marquee />
       <HowItWorks />
       <Compatibility />
-      <Privacy />
       <OpenSource />
       <Footer />
     </main>

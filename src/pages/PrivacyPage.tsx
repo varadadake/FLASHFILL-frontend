@@ -193,10 +193,10 @@ export default function PrivacyPage() {
 
         <Section title="Contact">
           <p>For privacy questions or concerns:</p>
-          <div className="mt-4 border-2 border-ink bg-background p-5 shadow-brutal">
+          <div className="mt-4 border-2 border-ink bg-ink p-5 shadow-brutal">
             <p className="font-mono text-sm">
-              <span className="text-muted-foreground uppercase tracking-widest text-xs">Email</span><br />
-              <a href="mailto:rushil@sociovate.com" className="font-bold text-bolt hover:underline">
+              <span className="text-paper/50 uppercase tracking-widest text-xs">Email</span><br />
+              <a href="mailto:rushil@sociovate.com" className="font-bold text-bolt hover:underline text-lg">
                 rushil@sociovate.com
               </a>
             </p>

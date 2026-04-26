@@ -186,9 +186,9 @@ export default function SupportPage() {
               ["∞", "Signups using those identities"],
               ["$0", "No credit card required"],
             ].map(([val, label]) => (
-              <div key={label} className="border-2 border-ink bg-background p-4 text-center shadow-brutal">
+              <div key={label} className="border-2 border-ink bg-ink p-4 text-center shadow-brutal">
                 <p className="font-display text-3xl font-bold text-bolt">{val}</p>
-                <p className="mt-1 font-mono text-xs uppercase tracking-widest text-muted-foreground">{label}</p>
+                <p className="mt-1 font-mono text-xs uppercase tracking-widest text-paper/50">{label}</p>
               </div>
             ))}
           </div>
@@ -208,8 +208,8 @@ export default function SupportPage() {
         </Section>
 
         <Section title="Contact">
-          <div className="border-2 border-ink bg-background p-5 shadow-brutal">
-            <p className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">Email</p>
+          <div className="border-2 border-ink bg-ink p-5 shadow-brutal">
+            <p className="font-mono text-[10px] uppercase tracking-widest text-paper/50">Email</p>
             <a href="mailto:rushil@sociovate.com" className="font-display text-lg font-bold text-bolt hover:underline">
               rushil@sociovate.com
             </a>
