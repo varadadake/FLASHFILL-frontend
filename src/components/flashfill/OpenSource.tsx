@@ -1,10 +1,4 @@
-import { Github, Star, GitFork, Code2 } from "lucide-react";
-
-const STATS = [
-  { icon: Star,    label: "Stars",   value: "—"   },
-  { icon: GitFork, label: "Forks",   value: "—"   },
-  { icon: Code2,   label: "License", value: "MIT" },
-];
+import { Github, Code2 } from "lucide-react";
 
 export const OpenSource = () => {
   return (
@@ -29,17 +23,15 @@ export const OpenSource = () => {
             Read the code, audit it yourself, or fork it and make it your own.
           </p>
 
-          {/* Stats row */}
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-6">
-            {STATS.map(({ icon: Icon, label, value }) => (
-              <div key={label} className="flex items-center gap-3 border-2 border-ink bg-background px-5 py-3 shadow-brutal">
-                <Icon className="h-5 w-5 text-bolt" strokeWidth={2} />
-                <div className="text-left">
-                  <p className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">{label}</p>
-                  <p className="font-display text-xl font-bold">{value}</p>
-                </div>
+          {/* MIT badge */}
+          <div className="mt-10 flex items-center justify-center">
+            <div className="flex items-center gap-3 border-2 border-ink bg-background px-6 py-3 shadow-brutal">
+              <Code2 className="h-5 w-5 text-bolt" strokeWidth={2} />
+              <div className="text-left">
+                <p className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">License</p>
+                <p className="font-display text-xl font-bold">MIT</p>
               </div>
-            ))}
+            </div>
           </div>
 
           {/* CTA */}

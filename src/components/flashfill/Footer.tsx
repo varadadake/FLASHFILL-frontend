@@ -1,4 +1,5 @@
 import { Zap } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -18,7 +19,13 @@ export const Footer = () => {
           </div>
 
           <div className="flex items-center gap-6 font-mono text-xs uppercase tracking-widest">
-            <a href="https://github.com/rushilbh27/flashfill/blob/main/LICENSE" target="_blank" rel="noreferrer" className="text-paper/70 hover:text-bolt">
+            <Link to="/privacy" className="text-paper/70 hover:text-bolt transition-colors">
+              Privacy
+            </Link>
+            <Link to="/support" className="text-paper/70 hover:text-bolt transition-colors">
+              Support
+            </Link>
+            <a href="https://github.com/rushilbh27/flashfill/blob/main/LICENSE" target="_blank" rel="noreferrer" className="text-paper/70 hover:text-bolt transition-colors">
               MIT License
             </a>
           </div>
