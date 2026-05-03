@@ -38,7 +38,9 @@ export const Hero = () => {
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </a>
             <a
-              href="#"
+              href="https://github.com/rushilbh27/getflashfill"
+              target="_blank"
+              rel="noreferrer"
               className="inline-flex items-center gap-2 border-2 border-ink bg-bolt px-6 py-3 font-mono text-sm font-bold uppercase tracking-wider shadow-brutal transition-snap hover:-translate-y-0.5"
             >
               <Chrome className="h-4 w-4" />
