@@ -37,7 +37,7 @@ export const OpenSource = () => {
           {/* CTA */}
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <a
-              href="#"
+              href="https://github.com/rushilbh27/getflashfill"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 border-2 border-ink bg-ink px-8 py-3.5 font-mono text-sm font-bold uppercase tracking-wider text-bolt shadow-brutal-bolt transition-snap hover:-translate-y-0.5"

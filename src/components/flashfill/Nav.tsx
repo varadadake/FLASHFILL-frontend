@@ -19,7 +19,9 @@ export const Nav = () => {
           <Link to="/privacy" className="hidden font-mono text-sm hover:text-bolt sm:inline">privacy</Link>
           <Link to="/support" className="hidden font-mono text-sm hover:text-bolt sm:inline">support</Link>
           <a
-            href="#"
+            href="https://github.com/rushilbh27/getflashfill"
+            target="_blank"
+            rel="noreferrer"
             className="inline-flex items-center gap-2 border-2 border-ink bg-bolt px-3 py-1.5 font-mono text-sm font-bold uppercase tracking-wider shadow-brutal transition-snap hover:-translate-y-0.5"
           >
             <Chrome className="h-4 w-4" />
