@@ -5,9 +5,17 @@ export const OpenSource = () => {
     <section className="border-b-2 border-ink bg-secondary/30 py-24">
       <div className="container">
         <div className="mx-auto max-w-3xl text-center">
-          <div className="inline-flex items-center gap-2 border-2 border-ink bg-background px-3 py-1 font-mono text-xs uppercase tracking-widest shadow-brutal">
-            <Github className="h-3.5 w-3.5" />
-            Open Source
+
+          {/* badges row */}
+          <div className="flex items-center justify-center gap-2">
+            <div className="inline-flex items-center gap-2 border-2 border-ink bg-background px-3 py-1 font-mono text-xs uppercase tracking-widest shadow-brutal">
+              <Github className="h-3.5 w-3.5" />
+              Open Source
+            </div>
+            <div className="inline-flex items-center gap-1.5 border border-ink bg-background px-2 py-1 font-mono text-[10px] uppercase tracking-widest">
+              <Code2 className="h-3 w-3 text-bolt" strokeWidth={2} />
+              MIT
+            </div>
           </div>
 
           <h2 className="mt-6 font-display text-4xl font-bold tracking-tight sm:text-5xl">
@@ -22,17 +30,6 @@ export const OpenSource = () => {
             Every line of FlashFill is public. No black boxes, no mystery network calls, no hidden tracking.
             Read the code, audit it yourself, or fork it and make it your own.
           </p>
-
-          {/* MIT badge */}
-          <div className="mt-10 flex items-center justify-center">
-            <div className="flex items-center gap-3 border-2 border-ink bg-background px-6 py-3 shadow-brutal">
-              <Code2 className="h-5 w-5 text-bolt" strokeWidth={2} />
-              <div className="text-left">
-                <p className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">License</p>
-                <p className="font-display text-xl font-bold">MIT</p>
-              </div>
-            </div>
-          </div>
 
           {/* CTA */}
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
